@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Bulldog's Tire</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1> <span class="title">Bulldog's Tire</span></h1>
+        <nav>
+            <button onclick="location.href='usuarios.html'">👤 Usuarios</button>
+            <button onclick="location.href='productos.html'">🛒 Productos</button>
+            <button onclick="location.href='ventas.html'">💰 Ventas</button>
+            <button onclick="location.href='index.html'">🚀index</button>
+        </nav>
+    </header>
+
+    <section class="contenedor">
+        <h2>Registrar Producto</h2>
+        <form id="formProducto">
+            <input type="text" id="nombre" placeholder="Nombre del Producto" required>
+            <textarea id="descripcion" placeholder="Descripción"></textarea>
+            <input type="number" id="precio" placeholder="Precio" step="0.01" required>
+            <input type="text" id="categoria" placeholder="Categoría" required>
+            <input type="number" id="stock" placeholder="Stock" required>
+            <button type="submit">Registrar Producto</button>
+        </form>
+    </section>
+
+    <section class="contenedor">
+        <h2>Lista de Productos</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody id="productosLista">
+                <!-- Aquí se llenará con JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        Bulldog's Tire © 2025 | Innovación en Llantas CIGC 🚗💨
+    </footer>
+
+    <script src="appProductos.js"></script>
+</body>
+</html>

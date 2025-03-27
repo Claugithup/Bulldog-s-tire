@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas | Bulldog's Tire</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>🐶 <span class="title">Bulldog's Tire</span></h1>
+        <nav>
+            <button onclick="location.href='usuarios.html'">👤 Usuarios</button>
+            <button onclick="location.href='productos.html'">🛒 Productos</button>
+            <button onclick="location.href='ventas.html'">💰 Ventas</button>
+            <button onclick="location.href='index.html'">🚀index</button>
+        </nav>
+    </header>
+    <section class="contenedor">
+        <h2>Registrar Venta</h2>
+        <form id="formVenta">
+            <input type="number" id="cliente_id" placeholder="ID Cliente" required>
+            <input type="number" id="producto_id" placeholder="ID Producto" required>
+            <input type="number" id="cantidad" placeholder="Cantidad" required>
+            <input type="number" id="total" placeholder="Total $" step="0.01" required>
+            <select id="metodo_pago">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+            </select>
+            <button type="submit">Registrar Venta</button>
+        </form>
+    </section>
+
+    <section class="contenedor">
+        <h2>Lista de Ventas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Método de Pago</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="ventasLista">
+                <!-- Las ventas se llenarán aquí con JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        Bulldog's Tire © 2025 | Innovación en Llantas CIGC 🚗💨
+    </footer>
+
+    <script src="js/appVentas.js"></script>
+    
+</body>
+</html>
