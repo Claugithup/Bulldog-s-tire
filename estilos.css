@@ -1,0 +1,349 @@
+/* 🎨 Fondo con imagen personalizada */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/bulldog-bg.jpg.webp'); /* Asegúrate de que la ruta es correcta */
+    background-size: 60%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000; /* Color de respaldo */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 🔳 Menú lateral */
+nav {
+    width: 220px;
+    background-color: rgba(43, 42, 42, 0);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 🔘 Botones del menú */
+nav button {
+    width: 90%;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: #FFA500;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* 📌 Asegurar que el contenido tenga suficiente espacio */
+main {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 30px;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔥 Ajuste del título "Bulldog's Tire" */
+.header-titulo {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffd700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* 🔥 Ajuste del ícono y la flama */
+.header-titulo img {
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+/* 📌 Ajuste de la presentación */
+.hero {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* ✅ Formularios */
+form {
+    background-color: rgba(5, 0, 0, 0.87);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px rgba(66, 61, 61, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* 🔳 Ajuste de los campos en formularios */
+form input, form select, form textarea {
+    padding: 12px;
+    border: 1px solid #e72424;
+    border-radius: 5px;
+    font-size: 14px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    color: rgb(90, 81, 81); /* 🔹 Letras en negro */
+}
+
+/* ✅ Ajuste para centrar los títulos */
+.titulo-formulario, .titulo-tabla {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ✅ Tablas */
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #222;
+    color: #FFD700;
+    font-size: 18px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 215, 0, 0.2);
+}
+
+/* 📌 Ajuste del Footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+/* ✅ Centrar formularios en todas las páginas */
+.formulario-ventas,
+.formulario-productos {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔳 Ajuste para títulos grandes */
+h1, h2, h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fc0707;
+    margin: 20px 0;
+}
+
+/* 📌 Ajustar títulos para que no queden tapados */
+h2, h3 {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* 🔳 Ajuste para formularios más grandes */
+@media screen and (min-width: 1024px) {
+    form input, form select, form textarea {
+        width: calc(33.3% - 10px); /* Mejor distribución en pantallas grandes */
+    }
+}
+/* Estilo de las tarjetas */
+.card {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 600px;
+    max-width: 90%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px rgba(255, 215, 0, 0.3);
+}
+
+/* Efecto hover */
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.5);
+}
+
+/* 🔹 Estilo del título en la tarjeta */
+.card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* 🔹 Amarillo */
+    transition: font-size 0.3s ease;
+}
+
+/* 🔹 Aumentar el tamaño del título al pasar el cursor */
+.card:hover h2 {
+    font-size: 28px;
+}
+
+/* 🔹 Estilo del texto */
+.card p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    transition: font-size 0.3s ease;
+}
+
+/* 🔹 Aumentar el tamaño del texto al pasar el cursor */
+.card:hover p {
+    font-size: 20px;
+}
+/* 🔘 Diseño estandarizado para todos los botones */
+button {
+    width: 200px; /* 🔹 Mismo ancho */
+    background-color: #FFD700; /* 🔹 Amarillo brillante */
+    color: black; /* 🔹 Texto en negro */
+    border: none;
+    padding: 12px;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* 🔹 Espacio entre ícono y texto */
+    transition: 0.3s;
+}
+
+/* 🎨 Efecto hover para los botones */
+button:hover {
+    background-color: #FFA500; /* 🔹 Cambio a naranja */
+    color: white;
+    transform: scale(1.05);
+}
+
+/* 🎯 Ajuste especial para botones pequeños (ejemplo: eliminar) */
+.btn-small {
+    width: 150px; /* 🔹 Botones más compactos */
+    font-size: 14px;
+}
+
+/* 🎯 Ajuste para los botones de acción (eliminar) */
+.btn-delete {
+    background-color: #DC3545; /* 🔹 Rojo */
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #C82333;
+}
+
+/* 🎯 Alineación del ícono en botones */
+button img {
+    width: 20px;
+    height: 20px;
+}
+.header-titulo {
+    font-size: 42px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Agrega sombra negra */
+}
+.titulo-principal {
+    font-size: 38px;
+    font-weight: bold;
+    color: #FFD700; /* Dorado elegante */
+    text-align: center;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Sombra negra para resaltar */
+}
+
+.titulo-eslogan {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF; /* Blanco brillante */
+    text-align: center;
+    margin-top: 5px;
+}
+nav {
+    width: 240px;
+    background: rgba(0, 0, 0, 0.027);
+    padding-top: 20px;
+    box-shadow: 5px 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Footer fijo y elegante */
+footer {
+    background: rgba(0, 0, 0, 0.911);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #FFD700;
+}
+tarjetas-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
